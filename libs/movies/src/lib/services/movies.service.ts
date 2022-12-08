@@ -35,7 +35,7 @@ export class MoviesService {
     return {
       imageUrl: `${this.apiBaseImageUrl}${movie.poster_path}`,
       title: movie.title,
-      voteAverage: movie.vote_average,
+      voteAverage: movie.vote_average / 2,
     };
   }
 }
